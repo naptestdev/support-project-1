@@ -21,6 +21,6 @@ loginForm.addEventListener("submit", (e) => {
 
 registerForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  localStorage.setItem("currentUser", registerForm.username.value.trim());
+  localStorage.setItem("currentUser", registerForm.email.value.trim());
   location.href = "./main.html";
 });

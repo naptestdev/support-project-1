@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quốc Khánh 2/9</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="shortcut icon" href="fapicon.png" type="image/x-icon">
+    <script src="./main.js"></script>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="fav">
+            <a href="./main.html"><img src="./fapicon.png" alt=""></a>
+
+
+        </div>
+        <div class="er">
+            <a href="./search.html"> Địa điểm thăm quan</a>
+        </div>
+
+        <div class="nav-page">
+
+            <div class="er"><a href="./login.html">Đăng nhập</a></div>
+            <div class="er"> <a href="#profile">profile</a></div>
+
+        </div>
+    </div>
+    </div>
+    <div class="thong-tin-nguoi-dung">
+        Thông tin người dùng
+    </div>
+    <div class="profile-part">
+        <div class="profile-name">
+            <div class="name-part">
+                <div class="avatar">
+                    <img src="https://static.vecteezy.com/system/resources/previews/009/734/564/original/default-avatar-profile-icon-of-social-media-user-vector.jpg"
+                        alt="">
+                    <div class="hovaten">
+                        Họ & Tên <br>
+                        <div id="username">User</div>
+                        <input type="text" placeholder="Nhập tên mới bạn muốn đổi vào đây" id="doi-ten">
+                    </div>
+
+                </div>
+            </div>
+            <div class="change-name">
+                <button onclick="changeName()" id="changeName">Chỉnh sửa</button>
+                <button onclick="cancelChangeName()" id="cancelChangeName">Hủy</button>
+            </div>
+
+        </div>
+        <div class="profile-name">
+            <div class="email-contain">
+                <div class="email">
+                    Email
+                </div>
+                <div class="com">
+                    <p style="color:cadetblue;">abc@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="profile-name">
+            <div class="profile-sdt">
+                <div class="text-sdt">
+                    Số điện thoại
+                </div>
+                <div class="text-sdt" id="addsdt">
+                    <input type="text" placeholder="Thêm số điện thoại" class="sdt-input"
+                        style="border: 2px solid blue;">
+                </div>
+            </div>
+            <div class="profile-add">
+                <button onclick="sdt()" style="color: blue;background-color: white;" id="open-sdt">Thêm</button>
+                <br>
+                <button onclick="huysdt()" style="color: blue; background-color: white;" id="cancel-sdt"
+                    id="close-sdt">Hủy</button>
+            </div>
+        </div>
+    </div>
+
+    </div>

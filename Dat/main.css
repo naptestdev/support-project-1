@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  border: none;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: red;
+  align-items: center;
+}
+body {
+  min-height: 100vh;
+}
+img {
+  width: 70px;
+}
+.nav-page {
+  display: flex;
+}
+.er {
+  padding: 10px 50px 10px 50px;
+
+  font-size: 20px;
+}
+.er :hover {
+  background-color: crimson;
+  color: black;
+}
+a {
+  color: aliceblue;
+}
+.background-img {
+  background-image: url(https://lsvn.vn/storage/uploads/photos/1013/02/60ff564d4588e.jpg);
+  backdrop-filter: blur(1px);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.intro {
+  color: yellow;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 100px 0;
+  font-size: larger;
+  text-align: center;
+}
+.content {
+  background-color: white;
+}
+.in4 {
+  padding-left: 130px;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  font-size: x-large;
+}
+.in4b {
+  width: 80%;
+  background-color: rgb(217, 254, 233);
+  display: flex;
+  vertical-align: middle;
+  padding: 10px;
+  color: cadetblue;
+  margin: 0px auto;
+}
+.left {
+  width: 200px;
+}
+.in4a {
+  width: 80%;
+  background-color: white;
+  display: flex;
+  vertical-align: middle;
+  padding: 10px;
+  color: cadetblue;
+  margin: 0px auto;
+}
+.container {
+  color: white;
+  background-image: url("https://trongdoandoi.vn/wp-content/uploads/2022/11/co-nuoc-viet-nam-ben-dep.jpg");
+  width: 450px;
+  margin: 0px auto;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  border: 1px solid rgba(255, 255, 255, 0.233);
+}
+.input {
+  padding-top: 20px;
+  font-size: larger;
+}
+.input1 {
+  width: 350px;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0px auto;
+  font-size: larger;
+}
+.input2 {
+  width: 370px;
+  border-radius: 5px;
+  margin-top: 40px;
+  padding: 11px;
+  font-size: larger;
+  color: white;
+  background-color: rgb(83, 146, 249);
+}
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.h1 {
+  font-size: 40px;
+  padding-left: 10px;
+}
+.dn2 {
+  font-size: larger;
+  padding-left: 10px;
+}
+.center {
+  text-align: center;
+}
+.camket {
+  width: 400px;
+  margin: 0px auto;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.profile-name {
+  background-color: white;
+  width: 60%;
+  display: flex;
+  margin: 0px auto;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.change-name {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+.avatar {
+  display: flex;
+  align-items: center;
+}
+.hovaten {
+  margin-left: 5px;
+  padding: 10px 0px 10px 0px;
+}
+.thong-tin-nguoi-dung {
+  width: 60%;
+  display: flex;
+  margin: 0px auto;
+  font-size: xx-large;
+  padding: 80px 0px 30px 0px;
+}
+.email {
+  padding: 20px 20px 0px 20px;
+}
+.email-contain {
+  display: block;
+}
+.com {
+  padding: 20px;
+}
+.sdt-input {
+  width: 100%;
+  padding: 10px;
+  border: 3px solid rgba(255, 255, 255, 0.233);
+  font-size: 15px;
+}
+.text-sdt {
+  padding: 10px 20px 10px 20px;
+}
+#addsdt {
+  display: none;
+}
+.profile-sdt {
+  padding: 10px 0px 10px 0px;
+}
+.profile-add {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  color: blue;
+}
+
+.container1 {
+  color: white;
+  background-image: url("https://trongdoandoi.vn/wp-content/uploads/2022/11/co-nuoc-viet-nam-ben-dep.jpg");
+  width: 450px;
+  margin: 0px auto;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  border: 1px solid rgba(255, 255, 255, 0.233);
+
+  margin-top: 150px;
+}
+
+/* phần cb cho js ( file: profile.html)  chỗ thêm sdt */
+#cancel-sdt {
+  display: none;
+}
+
+#cancelChangeName {
+  display: none;
+  background-color: white;
+  color: blue;
+}
+#changeName {
+  background-color: white;
+  color: blue;
+}
+#doi-ten {
+  display: none;
+  padding: 10px;
+}

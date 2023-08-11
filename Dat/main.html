@@ -1,425 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/search.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>Trang Chủ</title>
-  </head>
-  <body>
-    <nav>
-      <ul>
-        <li><a href="#">Trang Chủ</a></li>
-        <li><a href="#">Đặt Vé</a></li>
-        <li><a href="#">Về chúng tôi</a></li>
-        <li>
-          <div class="parent">
-            <input class="input" type="type" placeholder="Search..." />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quốc Khánh 2/9</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="shortcut icon" href="fapicon.png" type="image/x-icon">
+    <script src="./main.js"></script>
+</head>
+<body>
+    <div class="nav">
+        <div class="fav">
+            <a href="./main.html"><img src="./fapicon.png" alt=""></a>
+            
+        
+            </div>
+            <div class="er">
+                <a href="./main.html"> Địa điểm thăm quan</a>
+            </div>
+        
+            <div id="profile-button" >
+                
+                
+                </div>
+            </div>
+    </div>
+    
+    <div class="intro background-img">
+        <h1>
+            <span>Bạn muốn đi đâu trong Quốc Khánh!!!</span>
+            <br/>
+            <span style="font-size: xx-large;">ghé các địa điểm thăm quan ngay thôi</span>
+        </h1>
+        
+        
+    </div>
+    <div class="content">
+        <div class="in4">Thông tin nhanh về Việt Nam</div>
+        <div class="in4b">
+            <div class="left">nơi ở</div>
+            <div class="right">70,426 chỗ</div>
+        </div>
+        <div class="in4a">
+            <div class="left">Thành phố phổ biến</div>
+            <div class="right">Hà Nội</div>
+        </div><div class="in4b">
+            <div class="left">Giá mỗi đêm từ</div>
+            <div class="right">141106 đ</div>
+        </div>
+        <div class="in4a">
+            <div class="left">Lý do đi chơi</div>
+            <div class="right">Lịch sử,ngắm cảnh, địa lý, nhà hàng</div>
+        </div>
 
-            <button class="btn">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-          </div>
-        </li>
-        <li id="profile-button" style="float: right"></li>
-      </ul>
-    </nav>
+        
 
-    <!--Bài viết đã chọn lọc :)) -->
-
-    <main>
-      <table
-        id="muc-luc"
-        style="border-collapse: collapse; background-color: #f7f7f7"
-      >
-        <tbody id="mucluc">
-          <tr>
-            <td>
-              <p>
-                <a href=""
-                  ><span style="font-size: 12pt">
-                    Tổng hợp 10 danh lam thắng cảnh Việt Nam nhất định phải đi
-                    trong đời</span
-                  ></a
-                >
-              </p>
-              <p style="padding-left: 40px">
-                <a href="#trang-an" style="text-decoration: none"
-                  ><span>1. Tràng An</span></a
-                >
-              </p>
-              <p style="padding-left: 40px">
-                <a href="#chua-bai-dinh" style="text-decoration: none"
-                  ><span>2. Chùa Bái Đính</span></a
-                >
-              </p>
-              <p style="padding-left: 40px">
-                <a href="#tam-coc-bich-dong" style="text-decoration: none"
-                  ><span>3. Tam Cốc Bích Động</span></a
-                >
-              </p>
-              <p style="padding-left: 40px">
-                <a href="#hang-mua" style="text-decoration: none"
-                  ><span>4. Hang Múa</span></a
-                >
-              </p>
-              <p style="padding-left: 40px">
-                <a href="#tam-dao" style="text-decoration: none"
-                  ><span>5. Tam Đảo</span></a
-                >
-              </p>
-              <p style="padding-left: 40px">
-                <a href="#ha-noi" style="text-decoration: none"
-                  ><span>6. Hà Nội</span></a
-                >
-              </p>
-              <p style="padding-left: 40px">
-                <a href="#vinh-ha-long" style="text-decoration: none"
-                  ><span>7. Vịnh Hạ Long</span></a
-                >
-              </p>
-              <p style="padding-left: 40px">
-                <a href="#sapa" style="text-decoration: none"
-                  ><span>8. Sapa</span></a
-                >
-              </p>
-              <p style="padding-left: 40px">
-                <a href="#ha-giang" style="text-decoration: none"
-                  ><span>9. Hà Giang</span></a
-                >
-              </p>
-              <p style="padding-left: 40px">
-                <a href="#da-lat" style="text-decoration: none"
-                  ><span>10. Đà Lạt</span></a
-                >
-              </p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <article>
-        <h1>10 địa điểm du lịch Việt Nam nên đến</h1>
-        <p>
-          <span style="font-weight: 400"
-            >Từ lâu, câu nói “rừng vàng, biển bạc” được dùng để giới thiệu về
-            danh lam thắng cảnh Việt Nam. Với lợi thế của vị trí địa lý đặc biệt
-            cùng bờ biển dài dọc khắp hình chữ S, từ Bắc &#8211; Trung &#8211;
-            Nam đều sở hữu những khí hậu đặc trưng khác nhau, tạo nên hệ sinh
-            thái cực kỳ đặc sắc và phong phú.</span
-          >
-        </p>
-        <p>
-          <span style="font-weight: 400"
-            >Không ít danh lam thắng cảnh ở Việt Nam được Unesco công nhận, vinh
-            danh và bảo tồn. Cho đến nay, du lịch vẫn đang trở thành ngành mũi
-            nhọn được nhiều địa phương khai thác. Từ đó, các khu danh lam thắng
-            cảnh ở Việt Nam ngày càng trở nên hấp dẫn với du khách.</span
-          >
-        </p>
-        <h3 id="trang-an">
-          <b>1. Tràng An</b>
-        </h3>
-        <p>
-          <span style="font-weight: 400"
-            >Đứng đầu trong top các danh lam thắng cảnh ở Việt Nam nhất định
-            phải đi một lần trong đời đó chính là Quần thể danh thắng Tràng An.
-            Tọa lạc tại phía nam thuộc Tỉnh Ninh Bình và chỉ cách Hà Nội 90km,
-            đây là địa điểm rộng đến 6226 ha, trong đó hầu hết là ngập nước và
-            đồng lúa.</span
-          >
-        </p>
-        <p class="images">
-          <img
-            src="./images/img.daibieunhandan.vn-files-images-2023-04-08-_ninh-binh-1680921204191.jpeg"
-            alt=""
-            class="imagesettings"
-          />
-        </p>
-        <p>
-          <span style="font-weight: 400"
-            >Quần thể danh thắng Tràng An chính thức trở thành danh lam thắng
-            cảnh Việt Nam được Unesco công nhận vào ngày 25/6/2014 với 3 tiêu
-            chí: Văn Hóa &#8211;Thẩm Mỹ &#8211;Địa Mạo. Đây là một trong số
-            những nơi hiếm hoi trên thế giới giữ trọn vẹn cảnh quan tự nhiên
-            trong suốt 30.000 năm.</span
-          >
-        </p>
-        <p>
-          <span style="font-weight: 400"
-            >Với bề dày lịch sử và văn hóa lâu đời, Tràng An sở hữu vẻ đẹp nên
-            thơ trữ tình và trở thành nơi giao thoa giữa trầm tích cổ đại với
-            văn minh lúa nước của người Việt. Quang cảnh thiên nhiên hùng vĩ
-            dung hòa giữa núi non, sông nước khiến bất cứ ai khi đến thăm cũng
-            cảm thấy nao lòng và tự hào về quê hương đất nước.</span
-          >
-        </p>
-        <h3 id="chua-bai-dinh">
-          <b>2. Chùa Bái Đính</b>
-        </h3>
-        <p>
-          <span style="font-weight: 400"
-            >Cách thành phố Ninh Bình 15km và Hà Nội 95km, Chùa Bái Đính là danh
-            lam thắng cảnh di tích lịch sử Việt Nam có quy mô lớn nhất hiện nay.
-            Kết hợp với Chùa Tam Trúc và Chùa Hương, bộ 3 tạo nên tam giác tâm
-            linh mà người Việt nào cũng phải ghé thăm mỗi khi dịp tết đến xuân
-            về.</span
-          >
-        </p>
-        <p class="images">
-          <img src="./images/chua bai dinh.jpg" alt="" class="imagesettings" />
-        </p>
-        <p>
-          <span style="font-weight: 400"
-            >Tên gọi của Chùa Bái Đính xuất phát từ ý nghĩa hướng về núi Đính
-            khi trong lịch sử đây là nơi mà vua Đinh Tiên Hoàng lập đàn tế cầu
-            mưa thuận gió hòa cùng nhiều sự kiện lịch sử khác. Trước đó, Chùa
-            Bái Đính cổ được phát hiện bởi đức thánh Nguyễn Minh Không, khi ông
-            là người khai phá hang động thành chùa khi tìm thuốc chữa bệnh cho
-            vua Lý Thần Tông.</span
-          >
-        </p>
-        <p>
-          <span style="font-weight: 400"
-            >Ngày nay, phần chùa được chia làm 2 khu với chùa Bái Đính cổ nằm ở
-            núi cao 187m phía đông nam. Còn khu chùa mới được xây dựng với diện
-            tích 80 ha, với nhiều hạng mục công trình kiến trúc đồ sộ. Nhiều
-            danh hiệu được Bái Đính chinh phục như: Chùa có nhiều tượng La Hán
-            Nhất Việt Nam, có hành lang dài nhất Châu Á,&#8230;</span
-          >
-        </p>
-        <h3 id="tam-coc-bich-dong">
-          <b>3. Tam Cốc Bích Động</b>
-        </h3>
-        <p>
-          <span style="font-weight: 400"
-            >Tiếp tục là danh lam thắng cảnh của Việt Nam khác đến từ vùng đất
-            cố đô Hoa Lư &#8211;Ninh Bình, đó chính là Tam Cốc Bích Động. Ngay
-            từ cái tên, chúng ta có thể hiểu ngay ý nghĩa là Ba Hang Xuyên Thủy
-            Động nơi du khách có thể thăm quan ở cả 3 hình thức du thuyền, xe
-            đạp và đi bộ.</span
-          >
-        </p>
-        <p class="images">
-          <img src="./images/tam cốc.jpg" alt="" class="imagesettings" />
-        </p>
-        <p>
-          <span style="font-weight: 400"
-            >Từ xa xưa, đây là khu có vùng biển cả sóng vỗ trong nhiều thế kỷ và
-            bào mòn các vách đá để tạo nên những hình thù kỳ lạ. Sau đó, vào năm
-            1773, thân sinh của đại thi hào Nguyễn Du &#8211;Cụ Nguyễn Nghiễm
-            khi thăm động cảm thấy choáng ngợp trước khung cảnh núi, hang, sông
-            nước, ruộng, bầu trời nên đặt tên là Bích Động (Động Xanh).</span
-          >
-        </p>
-        <p>
-          <span style="font-weight: 400"
-            >Chính sự kết hợp hài hòa, hoàn hảo đó mà khi du khách đến thăm
-            chùa, thuyền sẽ đưa bạn đi những khúc đường quanh co huyền ảo của
-            hang núi. Ngoài ra, Bích Động còn được ví là Nam Thiên Đệ Nhị Động
-            hay Động Đẹp Thứ Nhì Trời Nam.</span
-          >
-        </p>
-        <h3 id="hang-mua">
-          <b>4. Hang Múa</b>
-        </h3>
-        <p>
-          <span style="font-weight: 400"
-            >Nằm trong top các danh lam thắng cảnh ở Việt Nam đến từ Ninh Bình
-            phải nói về Hang Múa. Với vị trí địa lý cách trung tâm thành phố chỉ
-            10km và thuộc quần thể danh thắng Tràng An. Hang Múa là tên gọi khi
-            vua Trần Thái Tông về Hoa Lưu để nghe các mỹ nữ múa hát nên đặt tên
-            như trên.</span
-          >
-        </p>
-        <p class="images">
-          <img src="./images/hang múa.png" alt="" class="imagesettings" />
-        </p>
-        <p>
-          <span style="font-weight: 400"
-            >Điểm ấn tượng của Hang Múa so với các danh lam thắng cảnh Việt Nam
-            khác nằm ở địa chất đặc trưng của vùng núi đá vôi với tuổi đời hàng
-            triệu năm. Tại đây có những công trình kiến trúc độc đáo nhất là với
-            con đường lên đỉnh núi Múa.</span
-          >
-        </p>
-        <p>
-          <span style="font-weight: 400"
-            >Để có thể ngắm nhìn toàn bộ cố đô Hoa Lư, du khách sẽ phải vượt qua
-            486 bậc thang. Trong đó, dọc theo đường đi 2 bên là những tượng đá
-            điêu khắc đẹp mắt bằng nhiều hình thù nghệ thuật khác nhau. Đây là
-            điểm nhấn chỉ có trong văn hóa dân gian của người Việt.</span
-          >
-        </p>
-        <h3 id="tam-dao">
-          <b>5. Tam Đảo</b>
-        </h3>
-        <p>
-          <span style="font-weight: 400"
-            >Với danh tiếng là “Đà Lạt của miền Bắc”, Tam Đảo từ lâu trở thành
-            địa chỉ không thể thiếu trong danh sách danh lam thắng cảnh Việt Nam
-            của các bạn trẻ. Đặc biệt, nơi này chỉ cách thủ đô Hà Nội 80km cực
-            kỳ thích hợp cho những ai muốn trải nghiệm bằng xe máy.</span
-          >
-        </p>
-        <p class="images">
-          <img src="./images/tam dao.jpg" alt="" class="imagesettings" />
-        </p>
-        <p>
-          <span style="font-weight: 400"
-            >Nhờ có vị trí địa lý cao 900m so với mực nước biển, Tam Đảo có khí
-            hậu mát mẻ se lạnh quanh năm và sở hữu nhiều cảnh sắc thiên nhiên
-            hùng vĩ. Do đó, từ lâu Tam Đảo còn được biết đến là thị trấn mờ
-            sương cùng vẻ đẹp tiềm ẩn đang chờ được khai phá.</span
-          >
-        </p>
-        <h3 id="ha-noi">
-          <b>6. Hà Nội</b>
-        </h3>
-        <p>
-          <span style="font-weight: 400"
-            >Là thủ đô và trung tâm văn hóa &#8211; chính trị của đất nước,
-            nhưng ít ai biết rằng Hà Nội cũng là một trong số những danh lam
-            thắng cảnh nổi tiếng của Việt Nam. Tại đây, còn lưu giữ rất nhiều
-            nét văn hóa, di tích lịch sử của hơn 1000 năm Thăng Long.</span
-          >
-        </p>
-        <p class="images">
-          <img src="./images/ha noi.jpg" alt="" class="imagesettings" />
-        </p>
-        <p>
-          <span style="font-weight: 400"
-            >Không chỉ dừng ở những con phố, các di tích lịch sử, văn hóa nổi
-            tiếng mà bạn có thể ghé thăm ở Hà Nội như: Hoàng Thành Thăng Long,
-            Văn Miếu Quốc Tử Giám, Chùa Một Cột, Lăng Bác, Phố cổ, Hồ
-            Gươm,&#8230; Và còn rất nhiều địa điểm khác mà bạn sẽ cần dành nhiều
-            thời gian để trải nghiệm.</span
-          >
-        </p>
-        <h3 id="vinh-ha-long">
-          <b>7. Vịnh Hạ Long</b>
-        </h3>
-        <p>
-          <span style="font-weight: 400"
-            >Nhắc đến danh lam thắng cảnh Việt Nam mà không nói đến Vịnh Hạ Long
-            chắc chắn sẽ là thiếu sót rất lớn. Không chỉ đơn giản là địa điểm
-            nhất định phải đi, mà đây còn là niềm tự hào của đất nước khi được
-            Unesco công nhận là 1 trong 7 Kỳ quan Thiên nhiên Mới của Thế
-            giới.</span
-          >
-        </p>
-        <p class="images">
-          <img
-            src="./images/kinh-nghiem-du-lich-vinh-ha-long-1.webp"
-            alt=""
-            class="imagesettings"
-          />
-        </p>
-        <p>
-          <span style="font-weight: 400"
-            >Chưa hết, Vịnh Hạ Long cũng đứng đầu trong top 10 vịnh biển đẹp
-            nhất trên thế giới do trang Touropia bình chọn. Với đường bờ biển
-            dài 120km, cùng hàng loạt địa danh nổi tiếng như: Động Thiên Cung,
-            Hang Đầu Gỗ, Hang Sửng Sốt, Hòn Trống Mái,&#8230; Chắc chắn ai đến
-            một lần cũng sẽ choáng ngợp trước khung hình nên thơ tại đây.</span
-          >
-        </p>
-        <h3 id="sapa">
-          <b>8. Sapa</b>
-        </h3>
-        <p>
-          <span style="font-weight: 400"
-            >Dường như những tỉnh vùng cao của núi rừng Tây Bắc chưa bao giờ
-            ngừng khiến mọi người cảm thấy thích thú. Và Sapa vốn là một huyện
-            của tỉnh Lào Cai chính là danh lam thắng cảnh đẹp nhất Việt Nam xét
-            theo tiêu chí cảnh sắc thiên nhiên và con người nơi đây.</span
-          >
-        </p>
-        <p class="images">
-          <img src="./images/sa pa.png" alt="" class="imagesettings" />
-        </p>
-        <p>
-          <span style="font-weight: 400"
-            >Bên cạnh việc ngắm nhìn những tinh túy, mộc mạc đơn sơ của núi rừng
-            vùng cao, Sapa còn nổi tiếng với đỉnh Fansipan &#8211; nơi mệnh danh
-            là “Nóc nhà Đông Dương” với độ cao hơn 3000m. Cùng điều kiện khí hậu
-            ôn đới, Sapa chắc chắn phải là địa điểm danh lam thắng cảnh Việt Nam
-            mà bạn phải đi.</span
-          >
-        </p>
-        <h3 id="ha-giang">
-          <b>9. Hà Giang</b>
-        </h3>
-        <p>
-          <span style="font-weight: 400"
-            >Sau Sapa có lẽ Hà Giang là một trong số ít những nơi được thiên
-            nhiên ưu ái ban tặng cảnh sắc hữu tình. Không dừng ở vai trò danh
-            lam thắng cảnh Việt Nam nổi tiếng, Hà Giang còn là nơi lưu giữ di
-            tích lịch sử lâu đời và thể hiện rõ nét bản sắc văn hóa 22 dân tộc
-            vùng cao.</span
-          >
-        </p>
-        <p class="images">
-          <img src="./images/hà giang.jpg" alt="" class="imagesettings" />
-        </p>
-        <p>
-          <span style="font-weight: 400"
-            >Một số địa điểm nổi bật mà bạn nên thăm quan chính là: Đỉnh Mã Pì
-            Lèng, núi đôi Quản Bạ hay hẻm vực Tu Sản. Đặc biệt, nếu bạn từng tìm
-            hiểu và yêu thích di tích lịch sử văn hóa của cao nguyên đá Đồng Văn
-            chắc chắn không nên bỏ qua Hà Giang.</span
-          >
-        </p>
-        <h3 id="da-lat">
-          <b>10. Đà Lạt</b>
-        </h3>
-        <p>
-          <span style="font-weight: 400"
-            >Người Pháp từng nói, Đà Lạt là một trong những địa điểm đặc biệt
-            khi sở hữu thời tiết ôn đới ngay giữa vùng nhiệt đới. Với hàng loạt
-            danh xưng như “Thành phố mù sương, Thành phố ngàn hoa, Tiểu
-            Paris,&#8230; ” Đà Lạt khó có thể đứng ngoài danh sách danh lam
-            thắng cảnh nổi tiếng của Việt Nam.</span
-          >
-        </p>
-        <p class="images">
-          <img src="./images/đà lạt.jpg" alt="" class="imagesettings" />
-        </p>
-        <p>
-          <span style="font-weight: 400"
-            >Thời gian đẹp nhất để bạn có thể tận hưởng không khí trọn vẹn của
-            đất trời Đà Lạt là vào khoảng tháng 10 &#8211; tháng 3. Đây là lúc
-            thời tiết hanh khô, kèm không khí se lạnh sẽ giúp bạn có những pose
-            hình đẹp mắt nhất. Những địa chỉ đi chơi thăm quan nổi tiếng tại Đà
-            Lạt là: Hồ Xuân Hương, Nhà thờ con gà, Thiền Viện Trúc Lâm, Gas Đà
-            Lạt,..</span
-          >
-        </p>
-      </article>
-    </main>
+    </div>
 
     <script>
-      let input = document.querySelector(".input");
-      let btn = document.querySelector(".btn");
-      let parent = document.querySelector(".parent");
-
-      btn.addEventListener("click", () => {
-        parent.classList.toggle("active");
-        input.focus();
-      });
-
-      const currentUser = localStorage.getItem("currentUser");
+    const currentUser = localStorage.getItem("currentUser");
       document.querySelector("#profile-button").innerHTML = currentUser
         ? `<a onclick="localStorage.removeItem('currentUser');location.reload()">${currentUser} (Đăng xuất)</a>`
         : ` <a href="register.html">Đăng Nhập / Đăng Ký</a>`;
     </script>
-  </body>
+</body>
 </html>
