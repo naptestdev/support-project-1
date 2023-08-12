@@ -37,9 +37,9 @@
             <div class="center">
                 <form class="sign">
                     <div class="input">Email</div>
-                    <input name="email" type="text" placeholder="abc@gmail.com" width="350px" class="input1">
+                    <input required name="email" type="text" placeholder="abc@gmail.com" width="350px" class="input1">
                     <div class="input">Mật Khẩu</div>
-                    <input type="text" placeholder="password" class="input1">
+                    <input required name="password" type="text" placeholder="password" class="input1">
                     <br>
                     <button type="submit" class="input2">Submit</button>
 
@@ -62,13 +62,34 @@
     </div>
 
     <script>
-        const form = document.querySelector("form");
+        let form = document.querySelector("form");
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
 
-        form.addEventListener("submit", (e) => {
-            e.preventDefault();
-            localStorage.setItem("currentUser", form.email.value.trim());
-            location.href= "./main.html";
-        })
+  if (!localStorage.getItem("users")) {
+    alert("No user found");
+  } else {
+    let users = JSON.parse(localStorage.getItem("users"));
+
+    let email = form.email;
+    let password = form.password;
+
+    let existingUser = users.find(
+      (index) =>
+        index.email === email.value.trim() &&
+        index.password === password.value.trim()
+    );
+
+    if (existingUser) {
+      localStorage.setItem("currentUser", JSON.stringify(existingUser));
+
+      location.href = "./main.html";
+    } else {
+      alert("Email or password is incorrect");
+    }
+  }
+});
+
     </script>
 
 </body>

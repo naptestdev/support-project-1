@@ -37,13 +37,13 @@
             <div class="center">
                 <form class="sign">
                     <div class="input">Email</div>
-                    <input name="email" type="text" placeholder="abc@gmail.com" width="350px" class="input1">
+                    <input required name="email" type="text" placeholder="abc@gmail.com" width="350px" class="input1">
                     <div class="input">Tên tài khoản</div>
-                    <input type="text" placeholder="Họ và Tên" class="input1">
+                    <input required name="username" type="text" placeholder="Họ và Tên" class="input1">
                     <div class="input">Số điện thoại</div>
                     <input type="text"placeholder="số điện thoại" class="input1">
                     <div class="input">mật khẩu</div>
-                    <input type="text"placeholder="password" class="input1">
+                    <input required name="password" type="text" placeholder="password" class="input1">
                     <div class="input">Nhập lại mật khẩu</div>
                     <input type="text"placeholder="Confirm password" class="input1">
                     <br>
@@ -56,7 +56,7 @@
                         và
                         <a href="https://thanhnien.vn/stories/chinh-sach-bao-mat" style="color:  rgb(83, 146, 249);"
                             class="dkvcs">chính sách bảo mật</a>
-                            <div class="regis" >nếu bạn chưa có tài khoản, hãy bấm <a href="./register.html" style="color:rgb(83, 146, 249);">vào đây</a></div>
+                            <div class="regis" >nếu bạn đã có tài khoản, hãy bấm <a href="./login.html" style="color:rgb(83, 146, 249);">vào đây</a></div>
                     </div>
                     
                 </form>
@@ -68,13 +68,55 @@
     </div>
 
     <script>
-        const form = document.querySelector("form");
-
+        let form = document.querySelector("form");
         form.addEventListener("submit", (e) => {
             e.preventDefault();
-            localStorage.setItem("currentUser", form.email.value.trim());
-            location.href= "./main.html";
-        })
+
+            let username = form.username.value.trim();
+            let email = form.email.value.trim();
+            let password = form.password.value;
+
+            let lowerCaseLetter = /[a-z]/g;
+            let upperCaseLetter = /[A-Z]/g;
+            let numbers = /[0-9]/g;
+
+            if (username.length < 6) {
+                alert("Username must be at least 6 characters");
+            } else if (password.length < 8) {
+                alert("Password must be at least 8 characters");
+            } else if (!password.match(lowerCaseLetter)) {
+                alert("Password must  contain a lowercase letter");
+            } else if (!password.match(upperCaseLetter)) {
+                alert("Password must  contain a uppercase letter");
+            } else if (!password.match(numbers)) {
+                alert("Password must  contain a number or special character");
+            } else {
+                if (localStorage.getItem("users")) {
+                let users = JSON.parse(localStorage.getItem("users"));
+
+                users.push({
+                    email,
+                    password,
+                    username,
+                });
+
+                localStorage.setItem("users", JSON.stringify(users));
+                } else {
+                localStorage.setItem(
+                    "users",
+                    JSON.stringify([
+                    {
+                        email,
+                        password,
+                        username,
+                    },
+                    ])
+                );
+                }
+                location.href = "./login.html";
+            }
+        });
+
     </script>
 
 </body>
