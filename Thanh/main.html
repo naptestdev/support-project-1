@@ -418,7 +418,9 @@
 
       const currentUser = localStorage.getItem("currentUser");
       document.querySelector("#profile-button").innerHTML = currentUser
-        ? `<a onclick="localStorage.removeItem('currentUser');location.reload()">${currentUser} (Đăng xuất)</a>`
+        ? `<a onclick="localStorage.removeItem('currentUser');location.reload()">${
+            JSON.parse(currentUser).email
+          } (Đăng xuất)</a>`
         : ` <a href="register.html">Đăng Nhập / Đăng Ký</a>`;
     </script>
   </body>
